@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{026A0E62-7865-4AFA-A893-F27B3C4D4993}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ScannerAPI.cs">
+    <Files>
+      <File FileName="Lambda.cs" Line="8" Column="27" />
+      <File FileName="ScannerAPI.cs" Line="5" Column="7" />
+      <File FileName="MVCConnection.cs" Line="4" Column="32" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.LambdaScannerAPI PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

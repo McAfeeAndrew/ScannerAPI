@@ -54,3 +54,23 @@ This is currently experimental and undocumented.
 
 ### When running on Amazon ECS or other hosted container services the container stops immediately
 Specify the entry point "/azure-functions-host/Microsoft.Azure.WebJobs.Script.WebHost" in the your services container configuration.
+
+# Building for AWS Lambda
+
+use:
+```bash
+dotnet lambda package            
+```
+
+## installing amazon lambda tools
+
+If you get:
+
+```bash
+No executable found matching command "dotnet-lambda"
+```
+
+then install the AWS Lambda tools with:
+```bash
+dotnet tool install --global Amazon.Lambda.Tools
+```

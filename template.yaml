@@ -1,0 +1,19 @@
+﻿AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: An AWS Lambda application that submits files to McAfee Web Gateway.
+Resources:
+  function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: ScannerAPI::Lambda.Function::FunctionHandler
+      Runtime: dotnetcore3.1
+      CodeUri: src/bin/Release/netcoreapp3.1/src.zip
+      Description: Submit files to McAfee Web Gateway
+      MemorySize: 256
+      Timeout: 9
+      # Function's execution role
+      Policies:
+        - AWSLambdaBasicExecutionRole
+        - AWSLambda_ReadOnlyAccess
+        - AWSXrayWriteOnlyAccess
+      Tracing: Active
